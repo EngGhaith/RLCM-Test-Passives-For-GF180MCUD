@@ -356,8 +356,8 @@ The full description is under
 
 Each de-embedding structure is probed in the same way as the device that it
 de-embeds, with the same calibration and probe placement. The launch is then
-removed with an open-short or thru-based method from the
-[further reading](#further-reading-4) of this section.
+removed with one of the open-short or thru-based methods listed under
+Further reading below.
 
 ### Expected values
 

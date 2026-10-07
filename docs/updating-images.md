@@ -56,6 +56,7 @@ committing.
 | [`render_layout.py`](scripts/render_layout.py) | KLayout, `klayout -z -r` | Renders one region of one GDS file to a PNG |
 | [`extract_pads.py`](scripts/extract_pads.py) | KLayout, `klayout -b -r` | Lists every pad opening with the net it belongs to, as JSON |
 | [`expected_values.py`](scripts/expected_values.py) | you, with `uv run` | Prints the hand-calculated capacitance, inductance and resistance. It draws nothing |
+| [`check_docs.py`](scripts/check_docs.py) | you, with `uv run` | Checks the Markdown files. See [Checking the documents](#checking-the-documents) |
 
 Both KLayout scripts can be run on their own. The command line is in the
 comment at the top of each.
@@ -142,3 +143,12 @@ Three things are worth knowing when you read its output:
 
 The seal ring and the dummy fill are removed before tracing, to keep the run
 time down.
+
+## Checking the documents
+
+After any edit, check the links, image paths, anchors, footnotes, heading
+levels and punctuation of every Markdown file:
+
+```sh
+uv run docs/scripts/check_docs.py
+```
